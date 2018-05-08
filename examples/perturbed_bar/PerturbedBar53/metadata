@@ -1,0 +1,51 @@
+COMPILATION DETAILS
+===================
+Git commit hash:         62763003495d6ad83f79322afa46b812c4a2a865
+AMReX version:           18.02
+Dimension:               2
+Compiled by:             jgras
+Platform:                lubbock
+Compiler:                mpicxx
+Compilation Date:        03/16/2018
+Compilation Time:        08:33:40
+
+RUN DETAILS
+===========
+Simulation started:      Tue Mar 20 10:39:44 2018
+Number of processors:    2
+
+PARAMETERS
+==========
+timestep = 0.001
+stop_time = 2000.0
+amr.nsubsteps = 4 16
+amr.plot_int = 10
+amr.max_level = 2
+amr.n_cell = 100 20
+amr.blocking_factor = 4
+amr.regrid_int = 10
+amr.grid_eff = 1.0
+amr.plot_file = examples/perturbed_bar/PerturbedBar53/output
+ic.type(nvals = 1)  :: [perturbed_interface]
+ic.wave_numbers(nvals = 1)  :: [64]
+ic.wave_amplitudes(nvals = 1)  :: [0.05]
+geometry.prob_lo = 0 -1
+geometry.prob_hi = 10 1
+geometry.is_periodic = 1 0 0
+bc.hi(nvals = 3)  :: [INT_DIR, EXT_DIR, INT_DIR]
+bc.lo(nvals = 3)  :: [INT_DIR, EXT_DIR, INT_DIR]
+bc.lo_2(nvals = 4)  :: [1.0, 0.0, 0.0, 0.0]
+bc.hi_2(nvals = 4)  :: [0.0, 1.0, 0.0, 0.0]
+pf.number_of_grains(nvals = 1)  :: [2]
+pf.M(nvals = 1)  :: [1.0]
+pf.mu(nvals = 1)  :: [1.0]
+pf.gamma(nvals = 1)  :: [1.0]
+pf.l_gb(nvals = 1)  :: [0.05]
+pf.sigma0(nvals = 1)  :: [0.75]
+anisotropy.on(nvals = 1)  :: [1]
+anisotropy.tstart(nvals = 1)  :: [0.02]
+anisotropy.theta0(nvals = 1)  :: [45]
+anisotropy.sigma0(nvals = 1)  :: [0.5]
+anisotropy.sigma1(nvals = 1)  :: [2.05]
+anisotropy.beta(nvals = 1)  :: [0.0012]
+anisotropy.damp(nvals = 1)  :: [1.0]

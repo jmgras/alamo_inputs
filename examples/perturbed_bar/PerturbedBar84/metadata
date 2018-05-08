@@ -1,0 +1,52 @@
+COMPILATION DETAILS
+===================
+Git commit hash:         78e3768e7cf56aecd9680e99b85aeca565f9c81f
+AMReX version:           18.03
+Dimension:               2
+Compiled by:             jgrasrib
+Platform:                login3.stampede2.tacc.utexas.edu
+Compiler:                mpicxx
+Compilation Date:        03/24/2018
+Compilation Time:        19:16:51
+
+RUN DETAILS
+===========
+Simulation started:      Sun Apr  1 20:07:18 2018
+Number of processors:    128
+
+PARAMETERS
+==========
+timestep = 0.01
+stop_time = 200.0
+amr.nsubsteps = 4 200
+amr.plot_int = 100
+amr.max_level = 2
+amr.n_cell = 100 20
+amr.blocking_factor = 4
+amr.regrid_int = 10
+amr.grid_eff = 1.0
+amr.plot_file = examples/perturbed_bar/PerturbedBar75/output
+ic.type(nvals = 1)  :: [perturbed_interface]
+ic.wave_numbers(nvals = 1)  :: [8]
+ic.wave_amplitudes(nvals = 1)  :: [0.02]
+geometry.prob_lo = 0 -1
+geometry.prob_hi = 10 1
+geometry.is_periodic = 1 0 0
+bc.hi(nvals = 3)  :: [INT_DIR, EXT_DIR, INT_DIR]
+bc.lo(nvals = 3)  :: [INT_DIR, EXT_DIR, INT_DIR]
+bc.lo_2(nvals = 4)  :: [1.0, 0.0, 0.0, 0.0]
+bc.hi_2(nvals = 4)  :: [0.0, 1.0, 0.0, 0.0]
+pf.number_of_grains(nvals = 1)  :: [2]
+pf.M(nvals = 1)  :: [1.0]
+pf.mu(nvals = 1)  :: [1.0]
+pf.gamma(nvals = 1)  :: [1.0]
+pf.l_gb(nvals = 1)  :: [0.05]
+pf.sigma0(nvals = 1)  :: [0.75]
+anisotropy.on(nvals = 1)  :: [1]
+anisotropy.gb_type(nvals = 1)  :: [abssin]
+anisotropy.tstart(nvals = 1)  :: [0.05]
+anisotropy.theta0(nvals = 1)  :: [45]
+anisotropy.sigma0(nvals = 1)  :: [0.065]
+anisotropy.sigma1(nvals = 1)  :: [0.65]
+anisotropy.beta(nvals = 1)  :: [0.0008]
+anisotropy.damp(nvals = 1)  :: [1.0]
